@@ -69,7 +69,7 @@ class ScoreController extends Controller
             'base_uri' => 'https://api.github.com/',
             'headers' => [
                 'Accept' => 'application/vnd.github+json',
-                'Authorization' => 'Bearer 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',
+                'Authorization' => 'Bearer '.env('GIT_TOKEN'),
                 'X-GitHub-Api-Version' => '2022-11-28',
             ],
         ]);
